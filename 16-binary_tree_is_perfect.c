@@ -22,7 +22,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	/* checking if tree is full */
 	left_full = binary_tree_is_full(tree->left);
-	right_full = binary_tree_is_full(tree->left);
+	right_full = binary_tree_is_full(tree->right);
 
 	return (left_height == right_height && left_full == right_full);
 }
